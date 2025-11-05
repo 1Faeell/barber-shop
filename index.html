@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BarberShop - Cortes modernos, barba profissional e tratamentos VIP. Agende agora!"
+    />
+    <meta
+      name="keywords"
+      content="barbearia, corte masculino, barba, degradê, sua cidade"
+    />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>BarberShop - Excelência em Cortes Masculinos</title>
+    <!-- Bootstrap Icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ===== CABEÇALHO COM NAVEGAÇÃO E STATUS ===== -->
+    <header>
+      <nav>
+        <div class="logo">
+          <i class="bi bi-scissors"></i>
+          <span>BARBER SHOP</span>
+        </div>
+        <!-- Badge que mostra se está ABERTO ou FECHADO -->
+        <div id="statusBadge" class="status-badge">
+          <span class="status-dot"></span>
+          <span id="statusText">Verificando...</span>
+        </div>
+        <!-- Botão hamburguer para mobile -->
+        <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Menu de navegação -->
+        <ul class="menu" id="menu">
+          <li><a href="#home" onclick="closeMenu()">Início</a></li>
+          <li><a href="#services" onclick="closeMenu()">Serviços</a></li>
+          <li><a href="#about" onclick="closeMenu()">Sobre</a></li>
+          <li><a href="#schedule" onclick="closeMenu()">Horários</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== SEÇÃO PRINCIPAL (HERO) ===== -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Excelência em Cortes Masculinos</h1>
+        <p>Estilo, tradição e qualidade em cada atendimento</p>
+        <button class="btn-primary" onclick="scrollToContact()">
+          Agendar Horário
+        </button>
+        <button class="btn-secondary" onclick="scrollToServices()">
+          Ver Serviços
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO DE SERVIÇOS ===== -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-subtitle">Qualidade profissional com preços justos</p>
+
+        <div class="services-grid">
+          <!-- Cada card representa um serviço -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-scissors"></i>
+            </div>
+            <h3>Corte Tradicional</h3>
+            <p>Corte clássico executado com precisão e acabamento impecável</p>
+            <div class="price">
+              R$ 45
+              <span class="price-label">por sessão</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-person-badge"></i>
+            </div>
+            <h3>Barba Completa</h3>
+            <p>Aparação, modelagem e finalização com navalha e toalha quente</p>
+            <div class="price">
+              R$ 40
+              <span class="price-label">por sessão</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h3>Combo Premium</h3>
+            <p>Corte + Barba + Sobrancelha com produtos de alta qualidade</p>
+            <div class="price">
+              R$ 75
+              <span class="price-label">por sessão</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-brush"></i>
+            </div>
+            <h3>Degradê Profissional</h3>
+            <p>Técnicas modernas de degradê com transições perfeitas</p>
+            <div class="price">
+              R$ 50
+              <span class="price-label">por sessão</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-palette"></i>
+            </div>
+            <h3>Coloração & Luzes</h3>
+            <p>Pigmentação e mechas com produtos profissionais</p>
+            <div class="price">
+              R$ 90
+              <span class="price-label">por sessão</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-gem"></i>
+            </div>
+            <h3>Experiência VIP</h3>
+            <p>Tratamento completo com massagem relaxante e bebida inclusa</p>
+            <div class="price">
+              R$ 130
+              <span class="price-label">por sessão</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO SOBRE A BARBEARIA ===== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Tradição e Qualidade</h2>
+            <p>
+              A BarberShop é referência em cortes masculinos há mais de 10 anos.
+              Nossa equipe de profissionais qualificados está pronta para
+              oferecer o melhor serviço.
+            </p>
+            <p>
+              Utilizamos apenas produtos de primeira linha e técnicas modernas
+              para garantir sua satisfação.
+            </p>
+
+            <ul class="about-features">
+              <li>Profissionais certificados e experientes</li>
+              <li>Ambiente climatizado e confortável</li>
+              <li>Produtos de alta qualidade</li>
+              <li>Agendamento online disponível</li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img src="assets/images/imagem-sobre.jpg" alt="Fazendo-a-barba" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO DE HORÁRIOS DE FUNCIONAMENTO ===== -->
+    <section class="schedule" id="schedule">
+      <div class="container">
+        <h2 class="section-title">Horários de Funcionamento</h2>
+        <p class="section-subtitle">
+          Confira nosso horário e planeje sua visita
+        </p>
+
+        <!-- Grade com todos os dias da semana -->
+        <div class="schedule-grid" id="scheduleGrid">
+          <!-- Os cards de horário serão inseridos aqui pelo JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO DE CONTATO ===== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Entre em Contato</h2>
+        <p class="section-subtitle">Estamos prontos para atendê-lo</p>
+
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>
+              <i class="bi bi-geo-alt-fill"></i>
+              Localização
+            </h3>
+            <p>
+              Rua Principal, 789<br />Centro - Salvador/BA<br />CEP: 40000-000
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h3>
+              <i class="bi bi-whatsapp"></i>
+              WhatsApp
+            </h3>
+            <p>(71) 98765-4321</p>
+            <p style="margin-top: 10px; font-size: 13px">
+              Resposta rápida garantida
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h3>
+              <i class="bi bi-envelope-fill"></i>
+              E-mail
+            </h3>
+            <p>contato@barbershop.com.br</p>
+            <p style="margin-top: 10px; font-size: 13px">
+              Respondemos em até 24h
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h3>
+              <i class="bi bi-instagram"></i>
+              Instagram
+            </h3>
+            <p>@barbershop</p>
+            <p style="margin-top: 10px; font-size: 13px">
+              Veja nossos trabalhos
+            </p>
+          </div>
+        </div>
+
+        <button
+          class="btn-primary"
+          style="margin-top: 40px"
+          onclick="openWhatsApp()"
+        >
+          <i class="bi bi-whatsapp"></i> Agendar pelo WhatsApp
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 BarberShop - Todos os direitos reservados</p>
+        <p style="margin-top: 10px; font-size: 13px; color: #666">
+          Desenvolvido com dedicação para oferecer a melhor experiência
+        </p>
+      </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT COM LÓGICA DO SITE ===== -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
