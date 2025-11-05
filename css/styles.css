@@ -610,6 +610,14 @@ nav {
   line-height: 1.6;
 }
 
+.contact iframe {
+  max-width: 1200px;
+  width: 100%;
+  margin: 2.5rem 0;
+  border-radius: 10px;
+  border: 2px solid var(--primary-color);
+}
+
 /* ===== RODAPÉ ===== */
 footer {
   background: var(--bg-darker);
