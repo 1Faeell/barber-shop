@@ -144,11 +144,11 @@ function scrollToServices() {
 function openWhatsApp() {
   // IMPORTANTE: Trocar pelo número real do cliente
   // Formato: código do país + DDD + número (sem espaços, traços ou parênteses)
-  const telefone = "5571987654321";
+  const telefone = "5571988327708";
 
   // Mensagem que será enviada automaticamente
   const mensagem = encodeURIComponent(
-    "Olá! Gostaria de agendar um horário na Barbearia Império."
+    "Olá! Gostaria de agendar um horário na BarberShop."
   );
 
   // Monta a URL do WhatsApp
