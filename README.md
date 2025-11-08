@@ -8,6 +8,13 @@ Uma landing page moderna, elegante e totalmente responsiva para barbearias. Dese
 <img width="1423" height="786" alt="image" src="https://github.com/user-attachments/assets/c3cd2eb7-8ae9-4aef-8cf8-947ef01888c2" />
 Visualizar projeto: https://1faeell.github.io/barber-shop
 
+## 🛠️ Tecnologias
+
+- **HTML5**: Estrutura semântica e acessível
+- **CSS3**: Estilização avançada com variáveis CSS, Grid e Flexbox
+- **JavaScript (ES6+)**: Lógica de interação e funcionalidades dinâmicas
+- **Bootstrap Icons**: Biblioteca de ícones
+
 ## ✨ Características
 
 ### 🎨 Design Moderno
@@ -31,10 +38,3 @@ Visualizar projeto: https://1faeell.github.io/barber-shop
 - JavaScript vanilla (sem dependências)
 - Imagens otimizadas
 - Código limpo e bem estruturado
-
-## 🛠️ Tecnologias
-
-- **HTML5**: Estrutura semântica e acessível
-- **CSS3**: Estilização avançada com variáveis CSS, Grid e Flexbox
-- **JavaScript (ES6+)**: Lógica de interação e funcionalidades dinâmicas
-- **Bootstrap Icons**: Biblioteca de ícones
